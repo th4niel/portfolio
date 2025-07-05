@@ -1,10 +1,10 @@
 ## 🚀 What's Inside?
 * Framework: Next.js - React framework with App Router
-* Language: TypeScript - Type-safe JavaScript
-* Styling: Tailwind CSS - Utility-first CSS framework
 * Internationalization: next-intl - Type-safe i18n for Next.js
-* Animation: Framer Motion - Production-ready motion library
-* UI Components: Shadcn/ui - Beautifully designed components
+* Language: TypeScript
+* Styling: Tailwind CSS
+* Animation: Framer Motion
+* UI Components: Shadcn/ui
 
 ## 📜 License
 
