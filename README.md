@@ -1,5 +1,5 @@
 ## 🚀 What's Inside?
-* Framework: Next.js 14 - React framework with App Router
+* Framework: Next.js - React framework with App Router
 * Language: TypeScript - Type-safe JavaScript
 * Styling: Tailwind CSS - Utility-first CSS framework
 * Internationalization: next-intl - Type-safe i18n for Next.js
