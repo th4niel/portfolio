@@ -25,6 +25,7 @@ import { FaJava } from "react-icons/fa";
 import Projects from "@/components/projectsPage/project";
 import TypewriterText from "@/components/typewriter/TypeWriter";
 import { useI18n } from "@/lib/i18n-context";
+import Image from "next/image";
 
 const ICONS = [
   FaReact,
@@ -69,10 +70,13 @@ const positions = generateUniquePositions(ICONS.length);
 
 const Logo = () => (
   <div className="mb-8 items-center flex justify-center relative z-20">
-    <img
+    <Image
       src="/logo.png"
       alt="Logo"
-      className="w-21 h-21 rounded-full border-2 border-emerald-400 object-cover"
+      width={84}
+      height={84}
+      className="rounded-full border-2 border-emerald-400 object-cover"
+      priority
     />
   </div>
 );

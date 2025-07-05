@@ -41,10 +41,15 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
   // Translation function
   const t = (key: string, params?: Record<string, string | number>): string => {
     const keys = key.split('.');
-    let value: any = messages[locale];
+    let value: unknown = messages[locale];
     
     for (const k of keys) {
-      value = value?.[k];
+      if (value && typeof value === 'object' && k in value) {
+        value = (value as Record<string, unknown>)[k];
+      } else {
+        value = undefined;
+        break;
+      }
     }
     
     if (typeof value !== 'string') {
