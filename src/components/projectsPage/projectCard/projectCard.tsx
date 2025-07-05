@@ -1,5 +1,5 @@
 'use client';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 import { useI18n } from '@/lib/i18n-context';
 
@@ -12,12 +12,20 @@ type Project = {
   i: number;
 };
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 40 },
+// Fix: Properly type the variants object
+const fadeUp: Variants = {
+  hidden: { 
+    opacity: 0, 
+    y: 40 
+  },
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.2, duration: 0.6, ease: 'easeOut' },
+    transition: { 
+      delay: i * 0.2, 
+      duration: 0.6, 
+      ease: [0.25, 0.46, 0.45, 0.94] as const // Add 'as const' assertion
+    },
   }),
 };
 
@@ -57,7 +65,6 @@ export const ProjectCard = ({
             <p className="text-sm text-zinc-200">{description}</p>
           </div>
         </div>
-
         {/* Text Content */}
         <div className="p-4">
           {/* Tech badges */}
@@ -71,7 +78,6 @@ export const ProjectCard = ({
               </span>
             ))}
           </div>
-
           {/* Button */}
           {link && (
             <a
