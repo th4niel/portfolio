@@ -154,19 +154,21 @@ export default function Home() {
             </motion.h1>
           </div>
 
+          {/* UPDATED: Using dangerouslySetInnerHTML to render HTML colors */}
           <motion.p
             className="max-w-2xl text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-8 text-center mx-auto backdrop-blur-md bg-white/10 dark:bg-black/10 border border-white/20 rounded-xl p-4 shadow-xl"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 1 }}
-          >
-            {t('home.description', {
-              name: t('home.name'),
-              role: t('home.role'),
-              industry: t('home.industry'),
-              field: t('home.field')
-            })}
-          </motion.p>
+            dangerouslySetInnerHTML={{
+              __html: t('home.description', {
+                name: t('home.name'),
+                role: t('home.role'),
+                industry: t('home.industry'),
+                field: t('home.field')  
+              })
+            }}
+          />
 
           {/* CTA Buttons */}
           <motion.div
@@ -229,7 +231,7 @@ export default function Home() {
               delay={i * 0.3}
               top={positions[i].top}
               left={positions[i].left}
-              rotation={Math.random() * 40 - 15}
+              rotation={Math.random() * 20 - 10}
             />
           ))}
         </div>
@@ -247,7 +249,7 @@ export default function Home() {
               delay={i * 0.3}
               top={positions[i].top}
               left={positions[i].left}
-              rotation={Math.random() * 30 - 10}
+              rotation={Math.random() * 10}
             />
           ))}
         </div>

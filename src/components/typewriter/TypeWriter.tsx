@@ -53,8 +53,7 @@ export default function TypewriterText({ texts }: { texts: string[] }) {
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.8, y: 20 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-blue-400 text-2xl sm:text-3xl md:text-4xl font-bold break-words hyphens-auto"
-        >
+          className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-blue-400 text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold break-words hyphens-auto text-center max-w-[280px] sm:max-w-none">
           {texts[index].substring(0, subIndex)}
         </motion.span>
       </AnimatePresence>

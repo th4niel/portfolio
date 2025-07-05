@@ -12,7 +12,6 @@ type Project = {
   i: number;
 };
 
-// Fix: Properly type the variants object
 const fadeUp: Variants = {
   hidden: { 
     opacity: 0, 
@@ -24,7 +23,7 @@ const fadeUp: Variants = {
     transition: { 
       delay: i * 0.2, 
       duration: 0.6, 
-      ease: [0.25, 0.46, 0.45, 0.94] as const // Add 'as const' assertion
+      ease: [0.25, 0.46, 0.45, 0.94] as const
     },
   }),
 };
