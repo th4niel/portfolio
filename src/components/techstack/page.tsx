@@ -94,7 +94,9 @@ export default function TechStack() {
               whileHover={{ scale: 1.08 }}
             >
               {/* Floating Glow Effect */}
-              <div className="absolute inset-0 rounded-xl opacity-20 group-hover:opacity-40 blur-md bg-gradient-to-r from-blue-500 to-purple-400 -z-10" />
+              <div className={`absolute inset-0 rounded-xl opacity-0 group-hover:opacity-30 blur-lg 
+                bg-gradient-to-r from-[${colorFrom}]/40 to-[${colorTo}]/60 -z-10 
+                transition-opacity duration-300`} />
               <div className="flex items-center gap-3 justify-center">
                 {icon}
                 {name}
