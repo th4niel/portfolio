@@ -104,7 +104,7 @@ export default function Navbar() {
                 </Link>
 
                 <Link
-                  href="https://github.com/ThaN1eL"
+                  href="https://github.com/th4niel"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-700 dark:text-gray-400 dark:hover:text-red-400 hover:text-green-500 transition-colors"

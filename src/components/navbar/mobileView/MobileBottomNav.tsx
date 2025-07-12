@@ -8,7 +8,7 @@ import {
 } from "lucide-react"
 
 const socialLinks = [
-  { href: "https://github.com/ThaN1eL", icon: Github },
+  { href: "https://github.com/th4niel", icon: Github },
   { href: "https://www.linkedin.com/in/thaniel23/", icon: Linkedin },
   { href: "https://www.instagram.com/niw32_/", icon: Instagram },
 ]
