@@ -223,36 +223,12 @@ export default function Home() {
       </section>
 
       <section className="w-full relative z-10 py-4 mt-9 bg-black">
-        <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
-          {ICONS.map((Icon, i) => (
-            <FloatingIcon
-              key={i}
-              Icon={Icon}
-              delay={i * 0.3}
-              top={positions[i].top}
-              left={positions[i].left}
-              rotation={Math.random() * 20 - 10}
-            />
-          ))}
-        </div>
         <Reveal>
           <Projects />
         </Reveal>
       </section>
 
       <footer className="w-full relative z-10 py-10 bg-black">
-        <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
-          {ICONS.map((Icon, i) => (
-            <FloatingIcon
-              key={i}
-              Icon={Icon}
-              delay={i * 0.3}
-              top={positions[i].top}
-              left={positions[i].left}
-              rotation={Math.random() * 10}
-            />
-          ))}
-        </div>
         <Reveal>
           <Footer />
         </Reveal>
