@@ -15,11 +15,9 @@ export const messages = {
       title: "I'm Nathaniel Edwin",
       subtitle1: "I'm a Software Engineer", 
       subtitle2: "I'm a Undergraduate Student",
-      description: "Hi, I'm {name} — <span class='text-teal-400'>{role}</span>, currently in my 4th year studying <span class='text-blue-400'>Information Management</span> at Kunshan University, Tainan, Taiwan. I'm interested in <span class='text-rose-400'>{industry}</span> and <span class='text-purple-400'>{field}</span>.",
+      description: "Hi, I'm {name} — <span class='text-teal-400'>{role}</span>, currently in my 4th year studying <span class='text-blue-400'>Information Management</span> at Kunshan University, Tainan, Taiwan. Currently starting to sharpen my logical thinking by developing a game from scratch as my main project (T.B.A)",
       name: "Nathaniel Edwin",
       role: "a Software Engineer",
-      industry: "Game Development",
-      field: "AI/Machine Learning",
       myProject: "MyProject",
       myResume: "MyResume", 
       recentProjects: "My Recent Projects",
@@ -37,6 +35,10 @@ export const messages = {
       crud: {
         title: "CRUD",
         description: "Product Store CRUD with Rate Limiting & Bot Detection"
+      },
+       erprealtime: {
+        title: "ERP-POS Realtime",
+        description: "Real-time ERP-POS management system with dashboard, order management, menu management, table management, inventory management (WIP), user management, and integrated payment functions"
       },
       ppiTainan: {
         title: "PPI Tainan", 
@@ -78,11 +80,9 @@ export const messages = {
       title: "我是 Nathaniel Edwin",
       subtitle1: "我是軟體工程師",
       subtitle2: "我是大學生",
-      description: "您好，我是 {name} — <span class='text-teal-400'>{role}</span>，目前就讀台南崑山科技大學<span class='text-blue-400'>資訊管理系</span>四年級。 我對<span class='text-rose-400'>{industry}</span> 與 <span class='text-purple-400'>{field}</span> 有興趣。",
+      description: "您好，我是 {name} — <span class='text-teal-400'>{role}</span>，目前就讀台南崑山科技大學<span class='text-blue-400'>資訊管理系</span>四年級。 目前正在從零開始開發遊戲，並以此作為我的主要專案來訓練 Logical Thinking (T.B.A)",
       name: "Nathaniel Edwin",
       role: "軟體工程師",
-      industry: "遊戲開發",
-       field: "人工智慧、機器學習", 
       myProject: "我的專案",
       myResume: "我的履歷",
       recentProjects: "我的最新專案",
@@ -100,6 +100,10 @@ export const messages = {
       crud: {
         title: "CRUD管理系統",
         description: "具備流量限制與機器人偵測功能的商品CRUD管理系統"
+      },
+      erprealtime: {
+        title: "ERP-POS Realtime",
+        description: "即時 ERP-POS 管理系統，具備儀表板、訂單管理、菜單管理、桌位管理、庫存管理(WIP)、使用者管理，以及整合式支付功能"
       },
       ppiTainan: {
         title: "PPI台南官網",
