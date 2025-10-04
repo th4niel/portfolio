@@ -19,6 +19,13 @@ export default function Projects() {
           link: 'https://product-store-y5xa.onrender.com/',
         },
         {
+          title: t('projects.erprealtime.title'),
+          tech: 'Next.js, React, Tailwind, PostgreSQL, TypeScript',
+          description: t('projects.erprealtime.description'),
+          video: 'https://res.cloudinary.com/dknpihuwb/video/upload/v1759589441/Screen_Recording_2025-10-04_224841_hlzvyp.mp4',
+          link: 'https://pos-erp-realtime.vercel.app/login',
+        },
+        {
           title: t('projects.ppiTainan.title'),
           tech: 'HTML, CSS, Javascript',
           description: t('projects.ppiTainan.description'),
