@@ -8,14 +8,14 @@ import {
   SiLinux, SiGit, SiGithub,
   SiFlutter
 } from "react-icons/si";
-import { FaJava } from "react-icons/fa";
+import { SiSharp } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { SiTypescript } from "react-icons/si";
 
 
 const techStack = [
   { name: "Python", icon: <SiPython />, colorFrom: "#3b82f6", colorTo: "#1d4ed8", desc: "A versatile, beginner-friendly programming language used in data, AI, and web" },
-  { name: "Java", icon: <FaJava />, colorFrom: "#ea580c", colorTo: "#c2410c", desc: "A robust, object-oriented programming language used in enterprise and Android development" },
+  { name: "Csharp", icon: <SiSharp />, colorFrom: "#ea580c", colorTo: "#c2410c", desc: "A powerful, object-oriented language used in game development with Unity, desktop apps, and enterprise solutions." },
   { name: "JavaScript", icon: <SiJavascript />, colorFrom: "#facc15", colorTo: "#eab308", desc: "The core scripting language of the web, enabling interactivity and dynamic content" },
   { name: "TypeScript", icon: <SiTypescript />, colorFrom: "#3b82f6", colorTo: "#1d4ed8", desc: "A superset of JavaScript that adds static types" },
   { name: "Tailwind CSS", icon: <SiTailwindcss />, colorFrom: "#06b6d4", colorTo: "#0ea5e9", desc: "A utility-first CSS framework for rapidly building custom user interfaces" },
