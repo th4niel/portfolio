@@ -122,7 +122,7 @@ export const messages = {
       },
       oAuthGithub: {
         title: "oAuth GitHub", 
-        description: "簡單的方式教你在 Next.js 裡結合 Prisma 實作 Auth.js 驗證功能"
+        description: "簡單的方式在 Next.js 裡結合 Prisma 實作 Auth.js 驗證功能"
       },
     },
     contact: {
