@@ -166,6 +166,13 @@ export default function ProjectsPage() {
           video: 'https://res.cloudinary.com/dknpihuwb/video/upload/v1751550704/Screen_Recording_2025-07-03_214828_jyuxpy.mp4',
           link: 'https://github.com/ThaN1eL/WeatherAPP?tab=readme-ov-file',
         },
+        {
+          title: t('projects.oAuthGithub.title'),
+          tech: 'Next.js, React, Node.js, Typescript, Prisma',
+          description: t('projects.oAuthGithub.description'),
+          video: 'https://res.cloudinary.com/dknpihuwb/video/upload/v1760621807/Screen_Recording_2025-10-16_212737_kd9igg.mp4',
+          link: 'https://github.com/th4niel/oAuth_Nextjs',
+        },
       ],
     },
   };
