@@ -14,13 +14,11 @@ const I18nContext = createContext<I18nContextType | undefined>(undefined);
 export function I18nProvider({ children }: { children: React.ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>(defaultLocale);
 
-  // Initialize locale from localStorage or browser language
   useEffect(() => {
     const savedLocale = localStorage.getItem('locale') as Locale;
     if (savedLocale && ['en', 'zh-TW'].includes(savedLocale)) {
       setLocaleState(savedLocale);
     } else {
-      // Detect browser language
       const browserLang = navigator.language;
       if (browserLang.startsWith('zh')) {
         setLocaleState('zh-TW');
@@ -34,11 +32,9 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
     setLocaleState(newLocale);
     localStorage.setItem('locale', newLocale);
     
-    // Update document language
     document.documentElement.lang = newLocale;
   };
 
-  // Translation function
   const t = (key: string, params?: Record<string, string | number>): string => {
     const keys = key.split('.');
     let value: unknown = messages[locale];
@@ -57,7 +53,6 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
       return key;
     }
     
-    // Replace parameters
     if (params) {
       return value.replace(/{(\w+)}/g, (match: string, paramKey: string) => {
         return params[paramKey]?.toString() || match;
