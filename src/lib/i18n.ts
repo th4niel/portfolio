@@ -2,7 +2,6 @@ export const locales = ['en', 'zh-TW'] as const;
 export const defaultLocale = 'en' as const;
 export type Locale = (typeof locales)[number];
 
-// Translation messages
 export const messages = {
   en: {
     navigation: {
@@ -51,7 +50,11 @@ export const messages = {
       weatherApp: {
         title: "Simple Weather Android App", 
         description: "Just created a basic weather Android app and explored using the free API key from OpenWeatherMap for real-time weather data."
-      }
+      },
+      oAuthGithub: {
+        title: "oAuth GitHub", 
+        description: "Simple implementation of Auth.js with Prisma in Next.js"
+      },
     },
     contact: {
       title: "Contact Me",
