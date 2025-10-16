@@ -119,7 +119,11 @@ export const messages = {
       weatherApp: {
         title: "Android天氣應用程式",
         description: "使用OpenWeatherMap免費API開發的基礎天氣應用程式，可獲取即時天氣資料"
-      }
+      },
+      oAuthGithub: {
+        title: "oAuth GitHub", 
+        description: "簡單的方式教你在 Next.js 裡結合 Prisma 實作 Auth.js 驗證功能"
+      },
     },
     contact: {
       title: "聯絡我",
