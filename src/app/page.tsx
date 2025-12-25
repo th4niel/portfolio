@@ -26,6 +26,7 @@ import Projects from "@/components/projectsPage/project";
 import TypewriterText from "@/components/typewriter/TypeWriter";
 import { useI18n } from "@/lib/i18n-context";
 import Image from "next/image";
+import { toast } from "sonner";
 
 const ICONS = [
   FaReact,
@@ -98,6 +99,17 @@ export default function Home() {
     "",
   ];
 
+  const handleResumeDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/resume/CV.pdf';
+    link.download = 'CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    toast.success('Resume downloaded successfully!');
+  };
+
   return (
     <div className="relative flex flex-col min-h-screen font-[family-name:var(--font-geist-sans)] bg-gradient-to-br from-white via-rose-50 to-violet-100 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900 transition-colors duration-500 bg-grid-dark overflow-hidden">
 
@@ -154,7 +166,6 @@ export default function Home() {
             </motion.h1>
           </div>
 
-          {/* UPDATED: Using dangerouslySetInnerHTML to render HTML colors */}
           <motion.p
             className="max-w-2xl text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-8 text-center mx-auto backdrop-blur-md bg-white/10 dark:bg-black/10 border border-white/20 rounded-xl p-4 shadow-xl"
             initial={{ opacity: 0 }}
@@ -187,14 +198,13 @@ export default function Home() {
             </Link>
 
             {/* Resume */}
-            <Link 
-              href="/" 
+            <button
+              onClick={handleResumeDownload}
               className="relative px-8 py-4 rounded-full font-semibold text-white bg-gradient-to-r from-slate-800 to-indigo-900 shadow-lg hover:shadow-emerald-500/50 overflow-hidden group transition-transform duration-300"
             >
-              <span className="relative z-10">{t('home.myResume')}</span>
-              {/* Shine Effect */}
-              <span className="absolute left-[-75%] top-0 w-1/2 h-full bg-white opacity-20 transform skew-x-[-20deg] group-hover:translate-x-[250%] transition-transform duration-700 ease-in-out" />
-            </Link>
+            <span className="relative z-10">{t('home.myResume')}</span>
+            <span className="absolute left-[-75%] top-0 w-1/2 h-full bg-white opacity-20 transform skew-x-[-20deg] group-hover:translate-x-[250%] transition-transform duration-700 ease-in-out" />
+          </button>
           </motion.div>
 
           {/* Background Spotlight */}
