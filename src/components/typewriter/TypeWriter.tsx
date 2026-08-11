@@ -1,15 +1,26 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function TypewriterText({ texts }: { texts: string[] }) {
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
   const [deleting, setDeleting] = useState(false);
+  const prevTextsRef = useRef(texts);
 
   // Typing and Deleting Logic
   useEffect(() => {
+    // texts changed (e.g. language switch) — restart the current word instead of
+    // carrying over a subIndex that no longer matches the new text's length,
+    // which would otherwise get the animation permanently stuck.
+    if (prevTextsRef.current !== texts) {
+      prevTextsRef.current = texts;
+      setSubIndex(0);
+      setDeleting(false);
+      return;
+    }
+
     if (index >= texts.length) return;
 
     const currentText = texts[index];

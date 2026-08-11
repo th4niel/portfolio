@@ -6,16 +6,14 @@ import {
   SiNextdotjs, SiReact, SiJavascript, SiPython, SiNeovim,
   SiTailwindcss, SiShadcnui, SiNodedotjs, SiExpress, SiPostgresql, SiPostman,
   SiLinux, SiGit, SiGithub,
-  SiFlutter
+  SiFlutter, SiDocker
 } from "react-icons/si";
-import { SiSharp } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { SiTypescript } from "react-icons/si";
 
 
 const techStack = [
   { name: "Python", icon: <SiPython />, colorFrom: "#3b82f6", colorTo: "#1d4ed8", desc: "A versatile, beginner-friendly programming language used in data, AI, and web" },
-  { name: "Csharp", icon: <SiSharp />, colorFrom: "#ea580c", colorTo: "#c2410c", desc: "A powerful, object-oriented language used in game development with Unity, desktop apps, and enterprise solutions." },
   { name: "JavaScript", icon: <SiJavascript />, colorFrom: "#facc15", colorTo: "#eab308", desc: "The core scripting language of the web, enabling interactivity and dynamic content" },
   { name: "TypeScript", icon: <SiTypescript />, colorFrom: "#3b82f6", colorTo: "#1d4ed8", desc: "A superset of JavaScript that adds static types" },
   { name: "Tailwind CSS", icon: <SiTailwindcss />, colorFrom: "#06b6d4", colorTo: "#0ea5e9", desc: "A utility-first CSS framework for rapidly building custom user interfaces" },
@@ -32,6 +30,7 @@ const techStack = [
   { name: "Express.js", icon: <SiExpress />, colorFrom: "#6b7280", colorTo: "#374151", desc: "A minimal and flexible Node.js web application framework" },
   { name: "React", icon: <SiReact />, colorFrom: "#38bdf8", colorTo: "#0ea5e9", desc: "A JavaScript library for building modern, component-based user interfaces" },
   { name: "Flutter", icon: <SiFlutter />, colorFrom: "#02569B", colorTo: "#039BE5", desc: "An open-source UI toolkit by Google for building natively compiled applications for mobile, web, and desktop from a single codebase"},
+  { name: "Docker", icon: <SiDocker />, colorFrom: "#2496ED", colorTo: "#0db7ed", desc: "A platform for building, shipping, and running applications in lightweight, portable containers" },
 ];
 
 const container = {

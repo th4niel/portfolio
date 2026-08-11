@@ -49,15 +49,17 @@ export const ProjectCard = ({
     >
       <div className="rounded-2xl overflow-hidden border border-zinc-200 dark:border-zinc-800 shadow-xl transition-transform duration-300 ease-in-out group bg-white dark:bg-zinc-900 hover:scale-[1.02] hover:shadow-purple-500/30 cursor-pointer">
         {/* Video Section */}
-        <div className="relative w-full h-48 overflow-hidden">
-          <video
-            src={video}
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-          />
+        <div className="relative w-full h-48 overflow-hidden bg-zinc-100 dark:bg-zinc-800">
+          {video && (
+            <video
+              src={video}
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+          )}
           {/* Overlay Content on Hover */}
           <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 px-4">
             <h3 className="text-xl text-white font-bold mb-2">{title}</h3>

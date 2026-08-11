@@ -13,8 +13,8 @@ export const messages = {
     home: {
       title: "I'm Nathaniel Edwin",
       subtitle1: "I'm a Software Engineer", 
-      subtitle2: "I'm a Undergraduate Student",
-      description: "Hi, I'm {name} — <span class='text-teal-400'>{role}</span>, currently in my 4th year studying <span class='text-blue-400'>Information Management</span> at Kunshan University, Tainan, Taiwan. I’m currently sharpening my logical thinking by developing a game from scratch as a side project (TBA)",
+      subtitle2: "Graduated from Kunshan University",
+      description: "Hi, I'm {name}, <span class='text-teal-400'>{role}</span> and <span class='text-blue-400'>Information Management</span> graduate from Kunshan University in Tainan, Taiwan. I’m currently developing DONG Mandarin, a Mandarin-learning Web and Mobile App",
       name: "Nathaniel Edwin",
       role: "a Software Engineer",
       myProject: "MyProject",
@@ -35,6 +35,10 @@ export const messages = {
         title: "CRUD",
         description: "Product Store CRUD with Rate Limiting & Bot Detection"
       },
+      dongMandarin: {
+        title: "DONG Mandarin",
+        description: "An Education Platform for learning Traditional Chinese vocabulary, built for Indonesian speakers with TOCFL-based flashcards and human-verified translations. Mobile app currently under development."
+      },
        erprealtime: {
         title: "ERP-POS Realtime",
         description: "Real-time ERP-POS management system with dashboard, order management, menu management, table management, inventory management (WIP), user management, and integrated payment functions"
@@ -52,9 +56,9 @@ export const messages = {
         description: "Just created a basic weather Android app and explored using the free API key from OpenWeatherMap for real-time weather data."
       },
       oAuthGithub: {
-        title: "oAuth GitHub", 
+        title: "oAuth GitHub",
         description: "Simple implementation of Auth.js with Prisma in Next.js"
-      },
+      }
     },
     contact: {
       title: "Contact Me",
@@ -82,8 +86,8 @@ export const messages = {
     home: {
       title: "我是 Nathaniel Edwin",
       subtitle1: "我是軟體工程師",
-      subtitle2: "我是大學生",
-      description: "您好，我是 {name} — <span class='text-teal-400'>{role}</span>，目前就讀台南崑山科技大學<span class='text-blue-400'>資訊管理系</span>四年級。 我目前正在從零開始開發一款遊戲，並以此作為副專案來訓練我的 Logical Thinking (TBA)",
+      subtitle2: "畢業於崑山科技大學",
+      description: "您好，我是 {name}，<span class='text-teal-400'>{role}</span>，畢業於台南崑山科技大學<span class='text-blue-400'>資訊管理系</span>。我目前正在開發 DONG Mandarin，一款中文學習的網頁與行動應用程式",
       name: "Nathaniel Edwin",
       role: "軟體工程師",
       myProject: "我的專案",
@@ -104,6 +108,10 @@ export const messages = {
         title: "CRUD管理系統",
         description: "具備流量限制與機器人偵測功能的商品CRUD管理系統"
       },
+      dongMandarin: {
+        title: "DONG Mandarin",
+        description: "專為印尼語使用者打造的繁體中文詞彙學習教育平台，採用 TOCFL 詞彙的字卡系統，並經過人工審核翻譯。行動應用程式版本目前開發中。"
+      },
       erprealtime: {
         title: "ERP-POS Realtime",
         description: "即時 ERP-POS 管理系統，具備儀表板、訂單管理、菜單管理、桌位管理、庫存管理(WIP)、使用者管理，以及整合式支付功能"
@@ -121,9 +129,9 @@ export const messages = {
         description: "使用OpenWeatherMap免費API開發的基礎天氣應用程式，可獲取即時天氣資料"
       },
       oAuthGithub: {
-        title: "oAuth GitHub", 
+        title: "oAuth GitHub",
         description: "簡單的方式在 Next.js 裡結合 Prisma 實作 Auth.js 驗證功能"
-      },
+      }
     },
     contact: {
       title: "聯絡我",

@@ -12,6 +12,13 @@ export default function Projects() {
     fullstack: {
       available: [
         {
+          title: t('projects.dongMandarin.title'),
+          tech: 'Next.js, React, TypeScript, Tailwind, Supabase',
+          description: t('projects.dongMandarin.description'),
+          video: 'https://res.cloudinary.com/dknpihuwb/video/upload/v1786461566/newDEMOdongmandarin_naw63d.webm',
+          link: 'https://dongmandarin.com/',
+        },
+        {
           title: t('projects.crud.title'),
           tech: 'PostgreSQL, Express, React, Node.js, Tailwind',
           description: t('projects.crud.description'),

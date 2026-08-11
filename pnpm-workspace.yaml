@@ -1,2 +1,14 @@
-ignoredBuiltDependencies:
+allowBuilds:
+  '@tailwindcss/oxide': true
+  '@tsparticles/engine': true
+  react-tsparticles: true
+  sharp: true
+  tsparticles-engine: true
+  unrs-resolver: true
+onlyBuiltDependencies:
+  - '@tailwindcss/oxide'
+  - '@tsparticles/engine'
+  - react-tsparticles
   - sharp
+  - tsparticles-engine
+  - unrs-resolver
